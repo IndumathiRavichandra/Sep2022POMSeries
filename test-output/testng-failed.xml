@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="mytests.SearchTest">
+        <methods>
+          <include name="setup"/>
+          <include name="searchTest"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- mytests.SearchTest -->
+      <class name="testngSessions.DependsOnMethodConcept">
+        <methods>
+          <include name="paymentTest"/>
+          <include name="searchTest"/>
+          <include name="addToCartTest"/>
+        </methods>
+      </class> <!-- testngSessions.DependsOnMethodConcept -->
+      <class name="mytests.AmazonTest">
+        <methods>
+          <include name="setup"/>
+          <include name="searchTest"/>
+          <include name="TearDown"/>
+          <include name="titleTest"/>
+        </methods>
+      </class> <!-- mytests.AmazonTest -->
+      <class name="mytests.LoginNegativeTest">
+        <methods>
+          <include name="loginNegativeTest"/>
+          <include name="setup"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- mytests.LoginNegativeTest -->
+      <class name="testngSessions.RegistrationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="enterName"/>
+        </methods>
+      </class> <!-- testngSessions.RegistrationTest -->
+      <class name="testngSessions.ExpectedExceptionConcept">
+        <methods>
+          <include name="calTest"/>
+        </methods>
+      </class> <!-- testngSessions.ExpectedExceptionConcept -->
+      <class name="testngSessions.AppTest">
+        <methods>
+          <include name="logoTest"/>
+          <include name="titleTest"/>
+          <include name="TearDown"/>
+          <include name="forgotPwdLinkExistTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testngSessions.AppTest -->
+      <class name="testngSessions.ApplicationTest">
+        <methods>
+          <include name="createUser"/>
+          <include name="searchTest"/>
+          <include name="homePageTest"/>
+          <include name="connectWithDB"/>
+          <include name="login"/>
+          <include name="deleteUser"/>
+          <include name="disconnectWithDB"/>
+          <include name="launchBrowser"/>
+          <include name="Logout"/>
+          <include name="cartTest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- testngSessions.ApplicationTest -->
+      <class name="testngSessions.OpenCartTest">
+        <methods>
+          <include name="forgotPwdLinkExistTest"/>
+          <include name="TearDown"/>
+          <include name="setup"/>
+          <include name="logoTest"/>
+          <include name="titleTest"/>
+        </methods>
+      </class> <!-- testngSessions.OpenCartTest -->
+      <class name="mytests.OpenCartTest">
+        <methods>
+          <include name="setup"/>
+          <include name="searchTest"/>
+          <include name="TearDown"/>
+          <include name="titleTest"/>
+        </methods>
+      </class> <!-- mytests.OpenCartTest -->
+      <class name="mytests.GoogleTest">
+        <methods>
+          <include name="setup"/>
+          <include name="titleTest"/>
+          <include name="TearDown"/>
+          <include name="searchExistTest"/>
+        </methods>
+      </class> <!-- mytests.GoogleTest -->
+      <class name="testngSessions.InvocationCountTest">
+        <methods>
+          <include name="searchTest"/>
+        </methods>
+      </class> <!-- testngSessions.InvocationCountTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
